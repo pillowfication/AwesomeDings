@@ -1,0 +1,29 @@
+{
+  "name": "awesomedings",
+  "version": "1.0.0",
+  "description": "Wingdings replacement for FontAwesome",
+  "author": {
+    "name": "Markus Tran",
+    "email": "thebluepillow@gmail.com",
+    "url": "http://pillowfication.com"
+  },
+  "homepage": "https://github.com/pillowfication/AwesomeDings",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pillowfication/AwesomeDings.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pillowfication/AwesomeDings/issues"
+  },
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "keywords": [
+    "fontawesome",
+    "icons",
+    "pillow",
+    "webdings",
+    "wingdings"
+  ],
+  "license": "MIT"
+}
