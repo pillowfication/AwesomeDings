@@ -1,0 +1,17 @@
+.#{$wd-css-prefix}-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.#{$wd-css-prefix}-stack-1x, .#{$wd-css-prefix}-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.#{$wd-css-prefix}-stack-1x { line-height: inherit; }
+.#{$wd-css-prefix}-stack-2x { font-size: 2em; }
+.#{$wd-css-prefix}-inverse  { color: $wd-inverse; }

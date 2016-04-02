@@ -1,0 +1,13 @@
+.#{$wd-css-prefix}-border {
+  padding: .2em .25em .15em;
+  border: solid .08em $wd-border-color;
+  border-radius: .1em;
+}
+
+.#{$wd-css-prefix}-pull-left  { float: left; }
+.#{$wd-css-prefix}-pull-right { float: right; }
+
+.#{$wd-css-prefix} {
+  &.#{$wd-css-prefix}-pull-left  { margin-right: .3em; }
+  &.#{$wd-css-prefix}-pull-right { margin-left: .3em; }
+}

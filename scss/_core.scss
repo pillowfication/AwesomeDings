@@ -1,0 +1,25 @@
+%wd-base-icon {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: inherit;
+  line-height: #{$wd-line-height-base};
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$wd-font-families: (
+  #{$wd-webdings-suffix}:    "Webdings",
+  #{$wd-wingdings-1-suffix}: "Wingdings",
+  #{$wd-wingdings-2-suffix}: "Wingdings 2",
+  #{$wd-wingdings-3-suffix}: "Wingdings 3"
+);
+
+@each $suffix, $font-family in $wd-font-families {
+  .#{$wd-css-prefix}-#{$suffix} {
+    @extend %wd-base-icon;
+    font-family: $font-family;
+  }
+}
