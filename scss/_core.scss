@@ -11,10 +11,10 @@
 }
 
 $wd-font-families: (
-  #{$wd-webdings-suffix}:    "Webdings",
   #{$wd-wingdings-1-suffix}: "Wingdings",
   #{$wd-wingdings-2-suffix}: "Wingdings 2",
-  #{$wd-wingdings-3-suffix}: "Wingdings 3"
+  #{$wd-wingdings-3-suffix}: "Wingdings 3",
+  #{$wd-webdings-suffix}:    "Webdings"
 );
 
 @each $suffix, $font-family in $wd-font-families {
