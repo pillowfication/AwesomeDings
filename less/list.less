@@ -1,0 +1,16 @@
+.@{wd-css-prefix}-ul {
+  padding-left: 0;
+  margin-left: @wd-li-width;
+  list-style-type: none;
+  > li { position: relative; }
+}
+.@{wd-css-prefix}-li {
+  position: absolute;
+  left: -@wd-li-width;
+  width: @wd-li-width;
+  top: (2em / 14);
+  text-align: center;
+  &.@{wd-css-prefix}-lg {
+    left: (-@wd-li-width + (4em / 14));
+  }
+}

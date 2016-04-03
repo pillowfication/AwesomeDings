@@ -10,7 +10,8 @@ module.exports = {
   },
   module: {
     loaders: [
-      {test: /\.scss$/, loader: 'style!css!sass'},
+      {test: /\.less$/, loader: 'style!css!less'},
+      {test: /\.scss$/, loader: 'style!css!sass'}
     ]
   }
 };

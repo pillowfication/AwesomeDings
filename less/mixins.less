@@ -1,0 +1,25 @@
+.wd-icon() {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: inherit;
+  line-height: @wd-line-height-base;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wd-icon-rotate(@degrees, @rotation) {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=@rotation);
+  -webkit-transform: rotate(@degrees);
+      -ms-transform: rotate(@degrees);
+          transform: rotate(@degrees);
+}
+
+.wd-icon-flip(@horiz, @vert, @rotation) {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=@rotation);
+  -webkit-transform: scale(@horiz, @vert);
+      -ms-transform: scale(@horiz, @vert);
+          transform: scale(@horiz, @vert);
+}

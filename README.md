@@ -19,10 +19,11 @@ Install the module
 npm install awesome-dings
 ```
 
-Using [Webpack](https://webpack.github.io/), you can require the SCSS files or CSS files.
+Using [Webpack](https://webpack.github.io/), you can require the SCSS, Less, or CSS files.
 
 ```javascript
 require('awesome-dings'); // SCSS
+require('awesome-dings/less/awesome-dings.less'); // Less
 require('awesome-dings/css/awesome-dings.css'); // CSS
 ```
 
@@ -70,7 +71,7 @@ $wd-additional-fonts: (
 
 @each $suffix, $font-family in $wd-additional-fonts {
   .#{$wd-css-prefix}-#{$suffix} {
-    @extend %wd-base-icon;
+    @extend %wd-icon;
     font-family: $font-family;
   }
 }
