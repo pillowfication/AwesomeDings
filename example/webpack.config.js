@@ -1,6 +1,4 @@
-'use strict';
-
-var path = require('path');
+const path = require('path')
 
 module.exports = {
   entry: './example/webpack.js',
@@ -10,8 +8,8 @@ module.exports = {
   },
   module: {
     loaders: [
-      {test: /\.less$/, loader: 'style!css!less'},
-      {test: /\.scss$/, loader: 'style!css!sass'}
+      {test: /\.less$/, loader: 'style-loader!css-loader!less-loader'},
+      {test: /\.scss$/, loader: 'style-loader!css-loader!sass-loader'}
     ]
   }
-};
+}

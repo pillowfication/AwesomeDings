@@ -74,8 +74,7 @@ $wd-extra-font-families: (
 
 @each $suffix, $font-family in $wd-extra-font-families {
   .#{$wd-css-prefix}-#{$suffix} {
-    @extend %wd-icon;
-    font-family: $font-family;
+    @include wd-icon($font-family);
   }
 }
 ```

@@ -1,25 +1,45 @@
-.wd-icon() {
+.wd-icon(@font-family: "Wingdings") {
   display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
+  font: normal normal normal @wd-font-size-base/@wd-line-height-base @font-family;
   font-size: inherit;
-  line-height: @wd-line-height-base;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .wd-icon-rotate(@degrees, @rotation) {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=@rotation);
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=@{rotation})";
   -webkit-transform: rotate(@degrees);
       -ms-transform: rotate(@degrees);
           transform: rotate(@degrees);
 }
 
 .wd-icon-flip(@horiz, @vert, @rotation) {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=@rotation);
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=@{rotation}, mirror=1)";
   -webkit-transform: scale(@horiz, @vert);
       -ms-transform: scale(@horiz, @vert);
           transform: scale(@horiz, @vert);
+}
+
+.sr-only() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.sr-only-focusable() {
+  &:active,
+  &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
 }

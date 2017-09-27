@@ -1,6 +1,6 @@
 {
   "name": "awesome-dings",
-  "version": "1.0.3",
+  "version": "4.7.0",
   "description": "Wingdings replacement for Font Awesome",
   "author": {
     "name": "Markus Tran",
@@ -17,17 +17,17 @@
   },
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack --config example/webpack.config --progress --colors --watch"
+    "example": "node_modules/webpack/bin/webpack.js --config example/webpack.config --progress --colors"
   },
   "dependencies": {},
   "devDependencies": {
-    "css-loader": "^0.23.1",
-    "less": "^2.6.1",
-    "less-loader": "^2.2.3",
-    "node-sass": "^3.4.2",
-    "sass-loader": "^3.2.0",
-    "style-loader": "^0.13.1",
-    "webpack": "^1.12.14"
+    "css-loader": "^0.28.7",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0"
   },
   "keywords": [
     "fontawesome",
