@@ -16,23 +16,9 @@
     "url": "https://github.com/pillowfication/AwesomeDings/issues"
   },
   "main": "index.js",
-  "scripts": {
-    "example": "node_modules/webpack/bin/webpack.js --config example/webpack.config --progress --colors"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "css-loader": "^0.28.7",
-    "less": "^2.7.2",
-    "less-loader": "^4.0.5",
-    "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.18.2",
-    "webpack": "^3.6.0"
-  },
   "keywords": [
     "fontawesome",
     "icons",
-    "pillow",
     "webdings",
     "wingdings"
   ],
