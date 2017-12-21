@@ -72,7 +72,7 @@ Since these code points aren’t exactly safe to use for icons, you may run into
 
 ## Examples
 
-[You can play with the package here.](http://pillowfication.com/github/awesome-dings#playground)
+[You can play with the package here.](http://pf-n.co/github/awesome-dings#playground)
 
 ```html
 <!-- This renders a man in a suit and shades levitating over a black disc -->
